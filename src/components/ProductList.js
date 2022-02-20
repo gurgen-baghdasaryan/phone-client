@@ -25,7 +25,7 @@ const ProductList = () => {
     await axios.delete("https://phonethe.herokuapp.com/api/products/" + id);
   };
   return (
-    <div className="row ">
+    <div className="row">
       {/* We tell our state variable to iterate with map */}
       {list.map((lista) => (
         <div className="col-md-4 p-2" key={lista._id}>
