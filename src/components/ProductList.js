@@ -19,7 +19,7 @@ const ProductList = () => {
       setList(res.data);
     };
     getProducts();
-  }, [list]);
+  }, []);
   //The logic to delete the product through an id
   const deleteProduct = async (id) => {
     await axios.delete("https://phonethe.herokuapp.com/api/products/" + id);
@@ -41,6 +41,7 @@ const ProductList = () => {
 
             <div className="card-footer d-flex">
               <div className="card-body">
+                {/* The Show more button */}
                 {/* The Show more button */}
                 <Link
                   className="btn btn-outline-success"
