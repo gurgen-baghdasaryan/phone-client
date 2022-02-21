@@ -1,5 +1,4 @@
 import React from "react";
-
 //The Link module will allow us to do routing
 import { Link } from "react-router-dom";
 
@@ -13,13 +12,19 @@ const NavBar = () => {
           The Phone
         </Link>
         <button
-        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item ">
+            <li className="nav-item">
               {/* The Link takes us to the initial route*/}
               <Link className="nav-link" to="/">
                 New Collection
